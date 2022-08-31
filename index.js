@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded',()=>{
     const form= document.querySelector(".form");
 
     function redirectToInstagram(){
-        // add values to database
+        // compare values to database and allow access
 
         user.value=""
         pass.value=""
         enableSubmit();
-        // window.location = "https://www.instagram.com";
+        window.location = "https://www.instagram.com";
     }
 
     function enableSubmit(){
