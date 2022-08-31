@@ -90,7 +90,7 @@ ul { list-style: none; }
 form { width: 100%; }
 
 .register,
-form { padding: 30px 20px; }
+form { padding: 30px 20px 0 20px; }
 
 .login-with-fb { padding: 30px 20px 20px 20px; }
 
@@ -115,14 +115,14 @@ form input:focus {
     outline: none;
 }
 
-form button {
-    background-color: #0095f6;
+.submit {
+    background-color: #a0d5f8;
     border-radius: 5px;
     color: #fff;
     font-weight: bold;
     height: 35px;
-    margin-top: 10px;
-    width: 100%;
+    margin: 10px auto 20px auto;
+    width: 88%;
 }
 
 /**
@@ -136,7 +136,6 @@ form button {
 
 .separator .or {
     color: #808080;
-    font-weight: bold;
 }
 
 .separator { padding: 0 20px; }
@@ -157,6 +156,7 @@ form button {
 /**
  * Register section
  */
+ .register{padding-bottom: 30px;}
 .register * { font-size: 14px; }
 .register a { 
     color: #0095f6;
@@ -164,42 +164,3 @@ form button {
 }
 
 .register p { margin-right: 5px; }
-
-/**
- * App download
- */
-.app-download { padding: 15px; }
-.app-download p { padding: 10px 0; }
-.app-download img { 
-    height: 40px; 
-    margin: 0 5px;
-}
-
-/**
- * Footer
- */
-footer {
-    margin: 0 auto 30px auto;
-    max-width: 935px;
-}
-footer ul { margin-bottom: 20px; }
-footer ul li { margin: 0 10px 10px; } 
-footer ul li a { color: #385185; }
-footer .copyright { color: #808080; }
-footer ul li a,
-footer .copyright { 
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
- }
-
-
-/**
- * Media queries
- */
-
-@media screen and (max-width: 767px) {
-    main { margin: 30px auto 50px auto; }
-    footer .copyright,
-    footer ul li a { font-size: 13px; }
-}
